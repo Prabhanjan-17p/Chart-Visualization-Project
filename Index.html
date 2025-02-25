@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chart Visualization</title>
+  <link rel="shortcut icon" href="./img/areaChartPic.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="chartMenu">
+    <h2 id="saIndexName"></h2>
+  </div>
+
+  <div class="wrap">
+    <div id="mobSetting2" onclick="openSettingInMobile()">
+      <img src="./img/indexOpen.png" alt="" >
+    </div>
+    <div class="boxBlack" id="mainDiv">
+      <div id="mobSetting" onclick="closeSettingInMobile()">
+        <img src="./img/closeIndex.png" alt="" >
+      </div>
+      <p id="cName"></p>
+    </div>
+
+    <div class="chartCard">
+      <div class="chartBox">
+        <div class="container">
+          <div class="containerBody">
+
+            <div id="openBar" style="display: block;">
+              <canvas id="myChart"></canvas>
+            </div>
+
+            <div id="scrollContainer" style="display: none;">
+              <div id="chartContainer">
+                <canvas id="myLineChart"></canvas>
+              </div>
+            </div>
+
+            <div id="pieOpen" style="display: none;">
+              <div class="chart-container">
+                <canvas id="totalVolumePieChart"></canvas>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="optType" id="newOnType">
+    <div class="imgPic" onclick="openBarC()">
+      <img src="./img/barChartPic.png" alt="">
+    </div>
+    <div class="imgPic" onclick="openPieC()">
+      <img src="./img/pieChartPic.png" alt="">
+    </div>
+    <div class="imgPic" onclick="openLineC()">
+      <img src="./img/lineChartPic.png" alt="">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

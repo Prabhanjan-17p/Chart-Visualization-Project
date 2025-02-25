@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+body {
+    overflow: hidden;
+    height: 90vh;
+}
+
+
+
+.chartMenu {
+    width: 100vw;
+    height: 70px;
+    background-color: #623d3d;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    margin-top: -33px;
+
+}
+
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.chartCard {
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+}
+
+.container {
+    width: 700px;
+    max-width: 700px;
+    overflow-x: auto;
+}
+
+.containerBody {
+    height: 500px;
+}
+
+.boxBlack {
+    height: 70vh;
+    width: 26vw;
+    background-color: wheat;
+    margin-left: -200px;
+    border-radius: 5px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    overflow-y: scroll;
+    padding: 12px;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 33px;
+}
+
+#cName {
+    height: 30px;
+    width: 300px;
+}
+
+.spanIndexName {
+    height: 35px;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+    transition: all .1s ease;
+
+}
+
+.spanIndexName:hover {
+    cursor: pointer;
+    background-color: #623d3d;
+    color: white;
+    border-radius: 4px;
+}
+
+#saIndexName {
+    color: white;
+    padding-right: 60px;
+    transition: all .8s ease-in;
+
+    font-family: "Open Sans", serif;
+}
+
+.optType {
+    height: 50vh;
+    width: 110px;
+    background-color: #623d3d;
+    position: absolute;
+    z-index: 999;
+    top: 28vh;
+    right: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.imgPic {
+    height: 60px;
+    width: 60px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPic img {
+    height: 45px;
+    width: 45px;
+    transition: all .4s ease-in;
+}
+
+.imgPic img:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+#scrollContainer {
+    display: none;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#chartContainer {
+    min-width: 700px;
+    display: inline-block;
+}
+
+#myLineChart {
+    height: 700px;
+    width: 700px;
+}
+
+
+.chart-container {
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+#openBar {
+    height: 500px;
+    width: 10000px;
+}
+
+#scrollContainer {
+    height: 500px;
+    width: 700px;
+    max-height: 500px;
+}
+
+#chartContainer {
+    height: 500px;
+    width: 700px;
+}
+
+#mobSetting {
+    display: none;
+}
+
+
+/* Responsive  Mobile*/
+@media only screen and (max-width: 600px) {
+    #newOnType {
+        transform: rotate(90deg);
+        top: 640px;
+        right: 145px;
+        z-index: 0;
+    }
+
+    .chartBox {
+        margin-top: -150px;
+        width: 280px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgba(54, 162, 235, 1);
+        background: white;
+        overflow: scroll;
+    }
+
+    .boxBlack {
+        /* margin-top: -110px; */
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: wheat;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: solid 3px rgba(54, 162, 235, 1);
+        overflow-y: scroll;
+        padding: 12px;
+    }
+
+    #saIndexName {
+        font-size: 14px;
+    }
+
+    #mobSetting img{
+        height: 50px;
+        width: 50px;
+    }
+    #mobSetting {
+        display: block;
+
+    }
+    #mobSetting2 img{
+        height: 50px;
+        width: 50px;
+    }
+    #mobSetting2{
+        margin-top: 60px;
+        margin-bottom: -65px;
+    }
+   
+
+    .wrap {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 70px; */
+        margin-top: 33px;
+        flex-direction: column;
+    }
+}
